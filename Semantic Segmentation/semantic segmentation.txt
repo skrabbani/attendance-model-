@@ -1,0 +1,22 @@
+Semantic segmentation is a natural step in the progression from coarse to fine inference:The origin could be located at classification which consista a prediction of making a whoe input. the next step is locilization /detection which provide not only the classes but also the information regarding the spatial location of those classes. finally semantic segmentation achives fine grained inference ny making dense predictions inferring labels for every pixel, so the every pixel is labeled with the classes of its enclosing object ore region
+
+(the images for the semantic segmentation is placed in a folder called semantic img plese refer there for the images.)
+
+It is also worthy to review some standard deep networks that have made significant contributions to the field of computer vision, as they are often used as the basis of semantic segmentation systems:
+                                        
+Alexnet
+VGG-16
+GoogLeNet
+ResNet
+
+Schematic approach
+
+A general semantic segmentation architecture can be broadly thought of as an encoder network followed by a decoder network:
+
+	The encoder is usually is a pre-trained classification network like 	VGG/ResNet followed by a decoder network.
+	
+	The task of the decoder is to semantically project the discriminative 	features (lower resolution) learnt by the encoder onto the pixel space 	(higher resolution) to get a dense classification.
+
+1 — Region-Based Semantic Segmentation
+2 — Fully Convolutional Network-Based Semantic Segmentation
+3 — Weakly Supervised Semantic Segmentation
